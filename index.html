@@ -11,7 +11,7 @@
 
     <script>
 
-        const socket = new WebSocket("https://edge-chat.messenger.com/chat?region=frc&sid=1055365787549695&cid=0c4e222a-9d0c-464a-82d6-c9bd915eb536");
+        const socket = new WebSocket("wss://edge-chat.messenger.com/chat?region=frc&sid=1055365787549695&cid=0c4e222a-9d0c-464a-82d6-c9bd915eb536");
 
         socket.onopen = (e) => console.log("[OPEN]", e);
         socket.onmessage = (e) => console.log("[MESSAGE]", e);
